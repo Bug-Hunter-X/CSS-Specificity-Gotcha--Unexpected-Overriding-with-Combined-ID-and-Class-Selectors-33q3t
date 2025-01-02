@@ -1,0 +1,20 @@
+The following CSS code demonstrates a solution where the selector specificity is clarified to control the color of the elements.  We made the `#id-div` the most specific selector, so it will take precedence.
+
+```css
+div {
+  color: blue;
+}
+
+.special-div {
+  color: red;
+}
+
+#id-div {
+  color: green; /* Will override the others */
+}
+
+#id-div.special-div {
+  color: purple;
+}
+```
+Alternatively, you could refactor your CSS to avoid such complex overlapping selectors.
